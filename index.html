@@ -32,6 +32,8 @@
   --t1600:#7B3597;
   --t1800:#C93B6B;
   --t2000:#E9822B;
+  /* research-theme accent beyond the emitter ramp */
+  --tsolar:#EDBB22;
   --measure:64ch;
 }
 
@@ -446,14 +448,16 @@ const STATEMENT = [
    logic and non-reciprocal heat management.`,
 
   `Alongside this I contribute to photodetection and gas sensing in two-dimensional and hybrid
-   nanostructures, and to a 2025 review in <em>Advanced Functional Materials</em> that maps the
-   field from far-field fundamentals to near-field devices.`,
+   nanostructures, to <strong>solar photovoltaic device modelling</strong> — lead-free halide
+   perovskite and ternary chalcogenide absorbers studied with density functional theory and
+   SCAPS-1D drift-diffusion simulation — and to a 2025 review in <em>Advanced Functional
+   Materials</em> that maps the field from far-field fundamentals to near-field devices.`,
 
   `I am looking for a position where I can push this work toward experimental validation of
    near-field devices, and toward inverse design as a general-purpose tool for thermal photonics.`
 ];
 
-/* ---------- 2. RESEARCH THEMES (the four cards) -------------------- */
+/* ---------- 2. RESEARCH THEMES (the theme cards) ------------------- */
 const THEMES = [
   { color:"var(--t1400)", title:"Near-field radiative heat transfer",
     body:"Sub-wavelength gaps, evanescent coupling and hyperbolic metamaterial emitters for thermophotovoltaic energy conversion beyond the blackbody limit." },
@@ -462,7 +466,9 @@ const THEMES = [
   { color:"var(--t1800)", title:"Thermal memristors & rectification",
     body:"History-dependent radiative conductance and asymmetric heat flow — components for thermal logic, contactless sensing and neuromorphic thermal computing." },
   { color:"var(--t2000)", title:"Photodetection & sensing",
-    body:"Near-ultraviolet photodetectors on silicon carbide, optically activated gas sensors in 2D nanostructures, and Rydberg atom-based sensing." }
+    body:"Near-ultraviolet photodetectors on silicon carbide, optically activated gas sensors in 2D nanostructures, and Rydberg atom-based sensing." },
+  { color:"var(--tsolar)", title:"Solar photovoltaic systems",
+    body:"Lead-free halide perovskite and ternary chalcogenide absorbers for self-powered photovoltaic and photodetector devices, combining first-principles DFT with SCAPS-1D drift-diffusion modelling to optimise band alignment, layer thickness and conversion efficiency." }
 ];
 
 /* ---------- 3. PUBLICATIONS ----------------------------------------
@@ -471,6 +477,21 @@ const THEMES = [
    doi:    leave "" if you don't have it — the link is simply omitted
 ------------------------------------------------------------------- */
 const PUBLICATIONS = [
+  { year:2025, first:false, type:"article",
+    title:"Design and optimization of a self-powered photodetector using lead-free halide perovskite Ba₃SbI₃: insights from DFT and SCAPS-1D",
+    authors:"Abdo, S.; Odebowale, A. A.; Abdulghani, A.; As'ham, K.; Djalab, Y.; Kanizaj, N.; Miroshnichenko, A. E.",
+    venue:"Nanomaterials", detail:"15(21), 1656", doi:"10.3390/nano15211656" },
+
+  { year:2025, first:false, type:"article",
+    title:"Unveiling the potential of the novel ternary chalcogenide SrHfSe₃ for eco-friendly, self-powered near-infrared photodetectors: a SCAPS-1D simulation study",
+    authors:"Abdo, S.; Odebowale, A. A.; Abdulghani, A.; As'ham, K.; Akter, S.; Hattori, H. T.; Kanizaj, N.; Miroshnichenko, A. E.",
+    venue:"Sci", detail:"7(3), 113", doi:"10.3390/sci7030113" },
+
+  { year:2025, first:false, type:"article",
+    title:"Enhanced Rabi splitting of exciton-polaritons and plasmon-polaritons in a lithium niobate metasurface",
+    authors:"Berhe, A. M.; Odebowale, A. A.; Koshelev, K.; Hattori, H. T.; Miroshnichenko, A. E.",
+    venue:"Laser & Photonics Reviews", detail:"20(1), e01825", doi:"10.1002/lpor.202401825" },
+
   { year:2025, first:true, type:"review",
     title:"Advances in radiative heat transfer: bridging far-field fundamentals and emerging near-field innovations",
     authors:"Odebowale, A. A.; Berhe, A.; Ogundare, R. T.; Abdo, S.; Abdulghani, A.; Hattori, H. T.; Miroshnichenko, A. E.",
@@ -499,7 +520,7 @@ const PUBLICATIONS = [
   { year:2025, first:false, type:"article",
     title:"All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams and holography",
     authors:"Berhe, A. M.; Shvedov, V.; Odebowale, A. A.; Hattori, H. T.; Miroshnichenko, A. E.",
-    venue:"Journal of Optics", detail:"28(1), 015102", doi:"" },
+    venue:"Journal of Optics", detail:"28(1), 015102", doi:"10.1088/2040-8986/ae292f" },
 
   { year:2025, first:false, type:"article",
     title:"Characterising nanoscale spatiotemporal defects of multi-layered MoSe₂ in hyper-temporal transient nanoscopy",
@@ -524,7 +545,12 @@ const PUBLICATIONS = [
   { year:2024, first:true, type:"review",
     title:"Emerging low detection limit of optically activated gas sensors based on 2D and hybrid nanostructures",
     authors:"Odebowale, A. A.; Abdulghani, A.; Berhe, A. M.; Somaweera, D.; Akter, S.; Abdo, S.; As'ham, K.; Saadabad, R. M.; Tran, T. T.; Bishop, D. P.; Solntsev, A. S.; Miroshnichenko, A. E.; Hattori, H. T.",
-    venue:"Nanomaterials", detail:"14(18), 1521", doi:"10.3390/nano14181521" }
+    venue:"Nanomaterials", detail:"14(18), 1521", doi:"10.3390/nano14181521" },
+
+  { year:2020, first:true, type:"article",
+    title:"Vanadium oxide thin films for an optical readout-based thermal imager",
+    authors:"Odebowale, A. A.; Abdel-Rahman, M.; Albrithen, H.",
+    venue:"Optik", detail:"202, 163580", doi:"10.1016/j.ijleo.2019.163580" }
 ];
 
 /* ---------- 4. TEACHING -------------------------------------------- */
